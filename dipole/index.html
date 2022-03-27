@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dipole antenna calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../common.js"></script>
+</head>
+<body>
+    <div id="main">
+        <noscript>
+            <p><b>you need to enable javascript for this page to work!</b></p>
+            <p>don't worry, I'll never track you. there is no hidden obfuscated code here.</p>
+        </noscript>
+
+        <h1>dipole antenna calculator</h1>
+
+        <img id="diagram-half" src="diagram-half.svg" alt="dipole antenna diagram">
+        <img id="diagram-quarter" src="diagram-quarter.svg" alt="dipole antenna diagram" style="display: none;">
+
+        <p>
+            <label for="frequency">Frequency [MHz]: </label>
+            <input type="number" id="frequency" class="val" min="1" value="144">
+            <input type="radio" name="variant" id="variant-half" checked="1"> <label for="variant-half">&half;&#955;</label>
+            <input type="radio" name="variant" id="variant-quarter"> <label for="variant-quarter">&frac14;&#955;</label>
+        </p>
+
+        <div id="results">
+            <p>Wavelength (&#955;): <span id="wavelength" class="val">N m = N*100 cm</span></p>
+            <table>
+            <thead>
+                <tr><th colspan="2">Lengths</th></tr>
+            </thead>
+            <tbody>
+                <tr><td id="label-full">Full length (&#955;)</td> <td id="length-full" class="val">N cm</td></tr>
+                <tr><td id="label-half">Element (&half;&#955;)</td> <td id="length-half" class="val">N cm</td></tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    
+    <script>
+        function update() {
+            // the frequency input, value is in MHz so let's convert to Hz
+            const f = document.getElementById('frequency').value * 1000 * 1000;
+            // ignore invalid values
+            if(f < 1) return;
+
+            // calculate wavelength
+            let wl = freqToWavelength(f);
+            console.debug(f, wl);
+
+            // set values
+            document.getElementById('wavelength').textContent = `${wl.toFixed(2)} m = ${(wl*100).toFixed(2)} cm`;
+
+            if(document.getElementById('variant-half').checked) {
+                document.getElementById('label-full').textContent = 'Full length (\u03BB)';
+                document.getElementById('label-half').textContent = 'Element (\u00BD\u03BB)';
+
+                document.getElementById('diagram-half').style.display = 'block';
+                document.getElementById('diagram-quarter').style.display = 'none';
+            } else {
+                document.getElementById('label-full').textContent = 'Full length (\u00BD\u03BB)';
+                document.getElementById('label-half').textContent = 'Element (\u00BE\u03BB)';
+
+                document.getElementById('diagram-half').style.display = 'none';
+                document.getElementById('diagram-quarter').style.display = 'block';
+                
+                wl /= 2;
+            }
+
+            document.getElementById('length-full').textContent = `${(wl*100).toFixed(2)} cm`;
+            document.getElementById('length-half').textContent = `${(wl/2*100).toFixed(2)} cm`;
+        }
+        // add event listeners to the frequency input
+        const freqinput = document.getElementById('frequency');
+        freqinput.addEventListener('change', update);
+        freqinput.addEventListener('keyup', update);
+        document.getElementById('variant-half').addEventListener('change', update);
+        document.getElementById('variant-quarter').addEventListener('change', update);
+        update();
+    </script>
+</body>
+</html>
