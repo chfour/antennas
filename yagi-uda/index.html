@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yagi-Uda antenna calculator</title>
+    <link rel="stylesheet" href="../style.css">
+    <script src="../common.js"></script>
+</head>
+<body>
+    <div id="main">
+        <noscript>
+            <p><b>you need to enable javascript for this page to work!</b></p>
+            <p>don't worry, I'll never track you. there is no hidden obfuscated code here.</p>
+        </noscript>
+
+        <h1>Yagi-Uda antenna calculator</h1>
+
+        <img src="diagram.svg" alt="Yagi-Uda antenna diagram">
+
+        <p>
+            <label for="frequency">Frequency [MHz]: </label>
+            <input type="number" id="frequency" class="val" min="1" value="144">
+        </p>
+
+        <div id="results">
+            <p>Wavelength (&#955;): <span id="wavelength" class="val">N m = N*100 cm</span></p>
+            <table>
+            <thead>
+                <tr><th colspan="2">Lengths</th></tr>
+            </thead>
+            <tbody>
+                <tr><td>Reflector (0.50&#955;)</td> <td id="element-r" class="val">N cm</td></tr>
+                <tr><td>Driven element (0.44&#955;)</td> <td id="element-a" class="val">N cm</td></tr>
+                <tr><td>&half; driven (0.22&#955;)</td> <td id="element-ah" class="val">N cm</td></tr>
+                <tr><td>Directors (0.43&#955;)</td> <td id="element-d" class="val">N cm</td></tr>
+                <tr><td>Reflector-driven (0.25&#955;)</td> <td id="spacing-r-d" class="val">N cm</td></tr>
+                <tr><td>Driven-director &amp; director-director (0.13&#955;)</td> <td id="spacing-a-d" class="val">N cm</td></tr>
+            </tbody>
+            </table>
+        </div>
+    </div>
+    <div id="footer">
+        <p>
+            sources:
+            <a href="https://en.wikipedia.org/wiki/Yagi%E2%80%93Uda_antenna#Description">1</a>,
+            <a href="https://www.everythingrf.com/rf-calculators/frequency-to-wavelength">2</a>
+        </p>
+    </div>
+
+    <script>
+        function update() {
+            // the frequency input, value is in MHz so let's convert to Hz
+            const f = document.getElementById('frequency').value * 1000 * 1000;
+            // ignore invalid values
+            if(f < 1) return;
+
+            // calculate wavelength
+            const wl = freqToWavelength(f);
+            console.debug(f, wl);
+
+            // set values
+            document.getElementById('wavelength').textContent = `${wl.toFixed(2)} m = ${(wl*100).toFixed(2)} cm`;
+
+            document.getElementById('element-r').textContent = `${(0.50*wl*100).toFixed(2)} cm`;
+            document.getElementById('element-a').textContent = `${(0.44*wl*100).toFixed(2)} cm`;
+            document.getElementById('element-ah').textContent = `${(0.44*wl*100/2).toFixed(2)} cm`;
+            document.getElementById('element-d').textContent = `${(0.43*wl*100).toFixed(2)} cm`;
+
+            document.getElementById('spacing-r-d').textContent = `${(0.25*wl*100).toFixed(2)} cm`;
+            document.getElementById('spacing-a-d').textContent = `${(0.13*wl*100).toFixed(2)} cm`;
+        }
+        // add event listeners to the frequency input
+        const freqinput = document.getElementById('frequency');
+        freqinput.addEventListener('change', update);
+        freqinput.addEventListener('keyup', update);
+        update();
+    </script>
+</body>
+</html>

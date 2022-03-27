@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="700"
+   height="550"
+   viewBox="0 0 700 550"
+   version="1.1"
+   id="svg5"
+   inkscape:version="1.1.2 (0a00cf5339, 2022-02-04, custom)"
+   sodipodi:docname="diagram.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:cc="http://creativecommons.org/ns#">
+  <sodipodi:namedview
+     id="namedview7"
+     pagecolor="#626262"
+     bordercolor="#666666"
+     borderopacity="1.0"
+     inkscape:pageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="true"
+     inkscape:document-units="px"
+     showgrid="false"
+     inkscape:snap-bbox="true"
+     inkscape:snap-page="false"
+     inkscape:snap-bbox-midpoints="true"
+     inkscape:snap-object-midpoints="true"
+     inkscape:snap-bbox-edge-midpoints="true"
+     inkscape:bbox-nodes="true"
+     inkscape:snap-nodes="true"
+     inkscape:bbox-paths="true"
+     inkscape:snap-midpoints="true"
+     inkscape:snap-smooth-nodes="true"
+     inkscape:snap-intersection-paths="true"
+     inkscape:object-paths="true"
+     inkscape:zoom="3.4789654"
+     inkscape:cx="582.78821"
+     inkscape:cy="313.31154"
+     inkscape:window-width="1920"
+     inkscape:window-height="1005"
+     inkscape:window-x="1920"
+     inkscape:window-y="45"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1" />
+  <defs
+     id="defs2" />
+  <g
+     inkscape:label="elements"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="display:inline">
+    <rect
+       style="opacity:1;fill:#896ac1;stroke:none;stroke-width:2.99999;stroke-linecap:square;stroke-dasharray:12, 2.99999;stroke-opacity:0.999801;fill-opacity:1"
+       id="rect2738"
+       width="659.91998"
+       height="28.836563"
+       x="1.5"
+       y="260.58176" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 21.42,25 V 525"
+       id="path2450" />
+    <g
+       id="g3155"
+       transform="translate(-122.50005,-30.534645)">
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 393.92005,85.53464 V 297.55267 H 344.87213"
+         id="path3025" />
+      <path
+         style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+         d="M 393.92005,525.53465 V 313.51663 h -49.04792"
+         id="path3025-0" />
+    </g>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 401.41998,59.999995 V 490.00001"
+       id="path3223" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 531.41998,59.999995 V 490.00001"
+       id="path3223-4" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:0.95;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff"
+       x="22.84"
+       y="-26.232"
+       id="text10245"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         x="22.84"
+         y="-26.232"
+         id="tspan17637">Reflector - 0.5λ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:0.95;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;text-anchor:start;display:inline;fill:#ffffff"
+       x="52.839996"
+       y="-276.23218"
+       id="text10245-8"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         x="52.839996"
+         y="-276.23218"
+         id="tspan17637-0">Driven element - 0.44λ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:0.95;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;text-anchor:start;display:inline;fill:#ffffff"
+       x="57.839996"
+       y="-406.23218"
+       id="text10245-8-4"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         x="57.839996"
+         y="-406.23218"
+         id="tspan17637-0-8">Director 1 - 0.43λ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:0.95;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;text-anchor:start;display:inline;fill:#ffffff"
+       x="57.839996"
+       y="-536.23126"
+       id="text10245-8-4-8"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         x="57.839996"
+         y="-536.23126"
+         id="tspan17637-0-8-8">Director 2 - 0.43λ</tspan></text>
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
+       d="M 661.41998,59.99999 V 490.00001"
+       id="path3223-4-7" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:0.95;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';text-align:start;text-anchor:start;display:inline;fill:#ffffff"
+       x="57.839993"
+       y="-666.23126"
+       id="text10245-8-4-8-7"
+       transform="rotate(90)"><tspan
+         sodipodi:role="line"
+         x="57.839993"
+         y="-666.23126"
+         id="tspan17637-0-8-8-6">Director N - 0.43λ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:40px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff"
+       x="579.71997"
+       y="277.79999"
+       id="text126537"><tspan
+         sodipodi:role="line"
+         id="tspan126535"
+         x="579.71997"
+         y="277.79999">...</tspan></text>
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 3;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 22.92,387.74099 h 248.5"
+       id="path131110" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 3;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 271.42001,387.74099 H 401.42"
+       id="path131110-3" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 3;stroke-dashoffset:0;stroke-opacity:1"
+       d="M 401.42,387.74097 H 531.41998"
+       id="path131110-3-0" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:3;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:12, 3;stroke-dashoffset:0;stroke-opacity:1"
+       d="m 531.41999,387.74097 h 130"
+       id="path131110-3-0-3" />
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';fill:#ffffff"
+       x="115.40598"
+       y="410.52502"
+       id="text133536"><tspan
+         sodipodi:role="line"
+         id="tspan133534"
+         x="115.40598"
+         y="410.52502">0.25λ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';display:inline;fill:#ffffff"
+       x="304.65598"
+       y="410.52502"
+       id="text133536-9"><tspan
+         sodipodi:role="line"
+         id="tspan133534-2"
+         x="304.65598"
+         y="410.52502">0.13λ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-weight:bold;font-size:24px;line-height:1.25;font-family:sans-serif;-inkscape-font-specification:'sans-serif Bold';display:inline;fill:#ffffff"
+       x="434.65598"
+       y="410.52499"
+       id="text133536-9-5"><tspan
+         sodipodi:role="line"
+         id="tspan133534-2-4"
+         x="434.65598"
+         y="410.52499">0.13λ</tspan></text>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer2"
+     inkscape:label="guides"
+     style="display:none">
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1.0693px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 21.42,525.53465 h 250"
+       id="path2908" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 271.41998,494.99997 h 130"
+       id="path3225" />
+    <path
+       style="fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 401.41998,490.50001 h 130"
+       id="path3225-4" />
+    <path
+       style="display:inline;fill:none;stroke:#ffffff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
+       d="m 531.41998,490.50001 h 130"
+       id="path3225-4-9" />
+  </g>
+  <metadata
+     id="metadata158356">
+    <rdf:RDF>
+      <cc:License
+         rdf:about="http://creativecommons.org/publicdomain/zero/1.0/">
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Reproduction" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#Distribution" />
+        <cc:permits
+           rdf:resource="http://creativecommons.org/ns#DerivativeWorks" />
+      </cc:License>
+      <cc:Work
+         rdf:about="">
+        <cc:license
+           rdf:resource="http://creativecommons.org/publicdomain/zero/1.0/" />
+      </cc:Work>
+    </rdf:RDF>
+  </metadata>
+</svg>
