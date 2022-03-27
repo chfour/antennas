@@ -34,12 +34,29 @@ img {
     font-family: "Fira Code", monospace;
 }
 
+#frequency {
+    font-size: 100%;
+    color: white;
+    background-color: transparent;
+    border: none;
+    border-bottom: 2px solid #8a8a8a;
+    width: 8em;
+}
+#frequency:focus {
+    outline: none;
+    border-color: white;
+}
+
 table {
     margin-bottom: 1em;
 }
 
 td:not(:first-child) {
     padding-left: 0.4em;
+}
+
+thead th {
+    text-align: unset;
 }
 
 ul.links {
