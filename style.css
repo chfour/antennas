@@ -30,6 +30,17 @@ img {
     max-width: 100%;
 }
 
+a[href="../"], a.backbutton{
+    color: #dad7ff;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.navbar {
+    width: 100%;
+    padding-left: 1em;
+    box-sizing: border-box;
+}
+
 .val {
     font-family: "Fira Code", monospace;
 }
