@@ -22,6 +22,8 @@
         <p>
             <label for="frequency">Frequency [MHz]: </label>
             <input type="number" id="frequency" class="val" min="1" value="144">
+            <label for="director-count">Director count: </label>
+            <input type="number" id="director-count" class="val" min="1" value="1" style="width: 3em;">
         </p>
 
         <div id="results">
@@ -37,6 +39,8 @@
                 <tr><td>Directors (0.43&#955;)</td> <td id="element-d" class="val">N cm</td></tr>
                 <tr><td>Reflector-driven (0.25&#955;)</td> <td id="spacing-r-d" class="val">N cm</td></tr>
                 <tr><td>Driven-director &amp; director-director (0.13&#955;)</td> <td id="spacing-a-d" class="val">N cm</td></tr>
+                <tr><td>Approx. total wire length</td> <td id="wirelength" class="val">N cm</td></tr>
+                <tr><td>Approx. total boom length</td> <td id="boomlength" class="val">N cm</td></tr>
             </tbody>
             </table>
         </div>
@@ -52,13 +56,15 @@
     <script>
         function update() {
             // the frequency input, value is in MHz so let's convert to Hz
-            const f = document.getElementById('frequency').value * 1000 * 1000;
+            const f = parseFloat(document.getElementById('frequency').value) * 1000 * 1000;
+            const directorCount = parseInt(document.getElementById('director-count').value);
             // ignore invalid values
-            if(f < 1) return;
-
+            console.debug({f, directorCount});
+            if(!f || !directorCount) return;
+            
             // calculate wavelength
             const wl = freqToWavelength(f);
-            console.debug(f, wl);
+            console.debug({wl});
 
             // set values
             document.getElementById('wavelength').textContent = `${wl.toFixed(2)} m = ${(wl*100).toFixed(2)} cm`;
@@ -70,11 +76,15 @@
 
             document.getElementById('spacing-r-d').textContent = `${(0.25*wl*100).toFixed(2)} cm`;
             document.getElementById('spacing-a-d').textContent = `${(0.13*wl*100).toFixed(2)} cm`;
+
+            document.getElementById('wirelength').textContent = `${((0.50 + 0.44 + 0.43*directorCount)*wl*100).toFixed(1)} cm`;
+            document.getElementById('boomlength').textContent = `${((0.25 + 0.13*directorCount)*wl*100).toFixed(1)} cm`;
         }
-        // add event listeners to the frequency input
-        const freqinput = document.getElementById('frequency');
-        freqinput.addEventListener('change', update);
-        freqinput.addEventListener('keyup', update);
+        // add event listeners to the inputs
+        document.querySelectorAll('input').forEach(e => {
+            e.addEventListener('change', update);
+            e.addEventListener('keyup', update);
+        });
         update();
     </script>
 </body>
