@@ -24,7 +24,7 @@
             <label for="frequency">Frequency [MHz]: </label>
             <input type="number" id="frequency" class="val" min="1" value="144">
             <input type="radio" name="variant" id="variant-half" checked="1"> <label for="variant-half">&half;&#955;</label>
-            <input type="radio" name="variant" id="variant-quarter"> <label for="variant-quarter">&frac14;&#955;</label>
+            <input type="radio" name="variant" id="variant-quarter"> <label for="variant-quarter">&#188;&#955;</label>
         </p>
 
         <div id="results">
@@ -63,7 +63,7 @@
                 document.getElementById('diagram-quarter').style.display = 'none';
             } else {
                 document.getElementById('label-full').textContent = 'Full length (\u00BD\u03BB)';
-                document.getElementById('label-half').textContent = 'Element (\u00BE\u03BB)';
+                document.getElementById('label-half').textContent = 'Element (\u00BC\u03BB)';
 
                 document.getElementById('diagram-half').style.display = 'none';
                 document.getElementById('diagram-quarter').style.display = 'block';
